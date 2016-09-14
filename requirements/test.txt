@@ -1,0 +1,5 @@
+coverage
+detox
+flake8
+mock
+pytest

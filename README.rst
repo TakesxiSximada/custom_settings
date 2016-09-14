@@ -1,0 +1,34 @@
+customsettings - CUSTOM SETTINGS
+================================
+
+.. image:: https://circleci.com/gh/TakesxiSximada/customsettings.svg?style=svg
+           :target: https://circleci.com/gh/TakesxiSximada/customsettings
+           :alt: CircleCI Status
+
+.. image:: https://codecov.io/gh/TakesxiSximada/custom_settings/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/TakesxiSximada/customsettings
+           :alt: CodeCov Status
+
+When describing in python of the configuration file, you need to change it in each environment. For example settings.py of Django.
+This package provides the utility to assist it.
+
+
+Install
+-------
+
+::
+
+   $ pip install customsettings
+
+How to use it
+-------------
+
+
+
+Other
+-----
+
+- PyPI: https://pypi.python.org/pypi/customsettings
+- Github: https://github.com/TakesxiSximada/customsettings
+- CircleCI: https://circleci.com/gh/TakesxiSximada/customsettings
+- CodeCov: https://codecov.io/gh/TakesxiSximada/customsettings

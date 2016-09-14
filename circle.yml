@@ -1,0 +1,27 @@
+machine:
+  pre:
+    - pyenv install -s 2.7.10
+    - pyenv install -s 3.4.4
+    - pyenv install -s 3.5.1
+    - pyenv global 2.7.10 3.4.4 3.5.1
+    - pyenv rehash
+
+dependencies:
+  cache_directories:
+    - /opt/circleci/.pyenv
+    - ~/.cache/pip/
+    - ~/customsettings/.tox
+
+  pre:
+    - pip install -r requirements/test.txt
+
+test:
+  pre:
+    - python2.7 -V
+    - python3.4 -V
+    - python3.5 -V
+  override:
+    - make test
+  post:
+    - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+    - coverage erase
