@@ -9,6 +9,10 @@ custom_settings - CUSTOM SETTINGS
            :target: https://codecov.io/gh/TakesxiSximada/custom_settings
            :alt: CodeCov Status
 
+.. image:: https://requires.io/github/TakesxiSximada/custom_settings/requirements.svg?branch=master
+           :target: https://requires.io/github/TakesxiSximada/custom_settings/requirements/?branch=master
+           :alt: Requirements Status
+
 When describing in python of the configuration file, you need to change it in each environment. For example settings.py of Django.
 This package provides the utility to assist it.
 
