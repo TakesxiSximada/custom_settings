@@ -25,8 +25,8 @@ How to use it
 
 settings_custom.py::
 
-  AUTH_CREDENTIAL = 'MY_CREDENTIAL'
-  INTEGER_VALUE = '1'
+   AUTH_CREDENTIAL = 'MY_CREDENTIAL'
+   INTEGER_VALUE = '1'
 
 
 Do the following to use this configuration file.
