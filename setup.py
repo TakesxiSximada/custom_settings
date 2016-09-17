@@ -64,7 +64,7 @@ def find_version(path, pattern='.*\.py$'):
 # Development Status :: 7 - Inactive
 
 setup(
-    name='customsettings',
+    name='custom_settings',
     version=find_version('src'),
     license='Apache License 2.0',
     description='customsettings',
