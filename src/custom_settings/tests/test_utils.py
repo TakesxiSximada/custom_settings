@@ -15,7 +15,9 @@ class CoerceTest(unittest.TestCase):
         second_value = NoSet
         default_value = None
 
-        value = func(value1=first_value, value2=second_value, default=default_value)
+        value = func(
+            value1=first_value, value2=second_value,
+            default=default_value)
         self.assertEqual(value, first_value)
 
     def test_second_value(self):
@@ -26,7 +28,9 @@ class CoerceTest(unittest.TestCase):
         second_value = 1
         default_value = None
 
-        value = func(value1=first_value, value2=second_value, default=default_value)
+        value = func(
+            value1=first_value, value2=second_value,
+            default=default_value)
         self.assertEqual(value, second_value)
 
     def test_default_value(self):
@@ -37,7 +41,9 @@ class CoerceTest(unittest.TestCase):
         second_value = NoSet
         default_value = 1
 
-        value = func(value1=first_value, value2=second_value, default=default_value)
+        value = func(
+            value1=first_value, value2=second_value,
+            default=default_value)
         self.assertEqual(value, default_value)
 
     def test_default_value_abridgement(self):

@@ -33,7 +33,8 @@ class CustomSettings(object):
             try:
                 value = type_(value)
             except (TypeError, ValueError) as err:
-                raise exc.CustomSettingTypeError('Invalid type: {}'.format(err))
+                raise exc.CustomSettingTypeError(
+                    'Invalid type: {}'.format(err))
 
         if value is utils.NoSet and raise_exception:
             raise exc.NoCustomSettingError('Not been set: {}'.format(name))
