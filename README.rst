@@ -42,7 +42,6 @@ Do the following to use this configuration file.
    'MY_CREDENTIAL'
 
 
-If you specified type_ argument, convert type to.
 
 
 .. code-block::
