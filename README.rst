@@ -32,7 +32,7 @@ settings_custom.py::
 Do the following to use this configuration file.
 
 
-::
+.. code-block::
 
    >>> import custom_settings
    >>> custom = custom_settings.load('settings_custom')
@@ -43,7 +43,7 @@ Do the following to use this configuration file.
 If you specified type_ argument, convert type to.
 
 
-::
+.. code-block::
 
    >>> custom.get('INTEGER_VALUE', type_=int, default=10)
    1
@@ -52,7 +52,7 @@ If you specified type_ argument, convert type to.
 If you specify True in use_environ, if it does not exist in settings_custom, acquired from the os.environ.
 
 
-::
+.. code-block::
 
    >>> custom.get('PS1', use_environ=True)
    '$ '
@@ -61,7 +61,7 @@ If you specify True in use_environ, if it does not exist in settings_custom, acq
 If you specify default, if it does not exist in settings_custom, to used default.
 
 
-::
+.. code-block::
 
    >>> custom.get('NO_SET_VALUE', default=10)
    10
@@ -70,7 +70,7 @@ If you specify default, if it does not exist in settings_custom, to used default
 If you specify True in raise_exception, if it does not exist in settings_custom,  raise exception.
 
 
-::
+.. code-block::
 
    >>> custom.get('NO_SET_VALUE', use_environ=True, raise_exception=True)
    Traceback (most recent call last):
