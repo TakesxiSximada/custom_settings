@@ -16,14 +16,16 @@ This package provides the utility to assist it.
 Install
 -------
 
-::
+.. code-block::
 
    $ pip install custom_settings
 
 How to use it
 -------------
 
-settings_custom.py::
+settings_custom.py
+
+::
 
    AUTH_CREDENTIAL = 'MY_CREDENTIAL'
    INTEGER_VALUE = '1'
