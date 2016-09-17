@@ -10,7 +10,7 @@ dependencies:
   cache_directories:
     - /opt/circleci/.pyenv
     - ~/.cache/pip/
-    - ~/customsettings/.tox
+    - ~/custom_settings/.tox
 
   pre:
     - pip install -r requirements/test.txt
