@@ -69,7 +69,7 @@ setup(
     license='Apache License 2.0',
     description='customsettings',
     long_description=read('README.rst'),
-    url='https://github.com/TakesxiSximada/customsettings',
+    url='https://github.com/TakesxiSximada/custom_settings',
     keywords='Settings, Django',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
