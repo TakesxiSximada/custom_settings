@@ -20,17 +20,20 @@ class CustomSettings(object):
 
     def get(self, name, type_=utils.NoSet, default=utils.NoSet,
             use_environ=utils.NoSet, raise_exception=utils.NoSet):
-        type_ = coerce(type_, self.type_)
-        default = coerce(default, self.default)
-        use_environ = coerce(use_environ, self.use_environ)
-        raise_exception = coerce(raise_exception, self.raise_exception)
+        type_ = utils.coerce(type_, self.type_)
+        default = utils.coerce(default, self.default)
+        use_environ = utils.coerce(use_environ, self.use_environ)
+        raise_exception = utils.coerce(raise_exception, self.raise_exception)
 
         value = getattr(self.data, name, utils.NoSet)
         if value is utils.NoSet and use_environ:
-            value = os.environ.get(name, use_environ, utils.NoSet)
+            value = os.environ.get(name, utils.NoSet)
 
-        if value is not utils.NoSet and type_ is not utils.NoSet:
-            value = type_(value)
+        if value is not utils.NoSet and type_ is not None:
+            try:
+                value = type_(value)
+            except (TypeError, ValueError) as err:
+                raise exc.CustomSettingTypeError('Invalid type: {}'.format(err))
 
         if value is utils.NoSet and raise_exception:
             raise exc.NoCustomSettingError('Not been set: {}'.format(name))

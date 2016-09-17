@@ -7,3 +7,7 @@ class NoCustomSettingError(Exception):
 
 class NoCustomSettingModuleError(Exception):
     """Cannot import custom settings module"""
+
+
+class CustomSettingTypeError(TypeError, ValueError):
+    """Cannot import custom settings module"""
