@@ -23,6 +23,11 @@ Install
 How to use it
 -------------
 
+.. code-block::
+
+>>> import custom_settings
+>>> custom = custom_settings.load('settings_custom')
+>>> custom.get('TEST', default=None, raise_exception=True, type=int, use_environ=False)
 
 
 Other
