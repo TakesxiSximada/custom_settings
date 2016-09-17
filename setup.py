@@ -84,7 +84,7 @@ setup(
         'Topic :: Software Development',
     ],
     author='TakesxiSximada',
-    author_email='sximada+customsettings@gmail.com',
+    author_email='sximada+custom_settings@gmail.com',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     platforms='any',
@@ -92,7 +92,7 @@ setup(
     zip_safe=False,
     install_requires=get_requirements('./requirements/install.txt'),
     tests_require=get_requirements('./requirements/test.txt'),
-    extra_require={
+    extras_require={
         'testing': get_requirements('./requirements/test.txt') + get_requirements('./requirements/install.txt'),  # noqa
     },
     cmdclass={
