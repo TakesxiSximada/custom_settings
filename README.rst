@@ -27,6 +27,8 @@ settings_custom.py::
 
   AUTH_CREDENTIAL = 'MY_CREDENTIAL'
 
+Do the following to use this configuration file.
+
 .. code-block::
 
    >>> import custom_settings
