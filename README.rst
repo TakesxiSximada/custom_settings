@@ -42,7 +42,7 @@ Do the following to use this configuration file.
    'MY_CREDENTIAL'
 
 
-If you specified type_ argument, convert type to.
+If you specified `type_` argument, convert type to.
 
 
 .. code-block::
@@ -51,7 +51,7 @@ If you specified type_ argument, convert type to.
    1
 
 
-If you specify True in use_environ, if it does not exist in settings_custom, acquired from the os.environ.
+If you specify True in `use_environ`, if it does not exist in settings_custom, acquired from the os.environ.
 
 
 .. code-block::
@@ -60,7 +60,7 @@ If you specify True in use_environ, if it does not exist in settings_custom, acq
    '$ '
 
 
-If you specify default, if it does not exist in settings_custom, to used default.
+If you specify `default`, if it does not exist in settings_custom, to used default.
 
 
 .. code-block::
@@ -69,7 +69,7 @@ If you specify default, if it does not exist in settings_custom, to used default
    10
 
 
-If you specify True in raise_exception, if it does not exist in settings_custom,  raise exception.
+If you specify True in `raise_exception`, if it does not exist in settings_custom,  raise exception.
 
 
 .. code-block::
