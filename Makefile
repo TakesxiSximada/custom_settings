@@ -19,11 +19,15 @@ bump:
 
 .PHONY: production
 production:
-	python setup.py sdist bdist_wheel upload
+	rm dist/*
+	python setup.py sdist bdist_wheel
+	twine upload dist/*
 
 .PHONY: staging
 staging:
-	python setup.py sdist bdist_wheel upload -r https://testpypi.python.org/pypi
+	rm dist/*
+	python setup.py sdist bdist_wheel
+	twine upload dist/* -r testpypi
 
 .PHONY: test
 test:
