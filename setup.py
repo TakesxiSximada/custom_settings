@@ -67,7 +67,7 @@ setup(
     name='custom_settings',
     version=find_version('src'),
     license='Apache License 2.0',
-    description='customsettings',
+    description='Utility for the settings file',
     long_description=read('README.rst'),
     url='https://github.com/TakesxiSximada/custom_settings',
     keywords='Settings, Django',
