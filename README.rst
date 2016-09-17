@@ -70,14 +70,6 @@ If you specify default, if it does not exist in settings_custom, to used default
 If you specify True in raise_exception, if it does not exist in settings_custom,  raise exception.
 
 
-.. code-block::
-
-   >>> custom.get('NO_SET_VALUE', use_environ=True, raise_exception=True)
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in <module>
-     File "/envs/3.5/lib/python3.5/site-packages/custom_settings/adapters.py", line 40, in get
-       raise exc.NoCustomSettingError('Not been set: {}'.format(name))
-   custom_settings.exc.NoCustomSettingError: Not been set: NO_SET_VALUE
 
 
 
