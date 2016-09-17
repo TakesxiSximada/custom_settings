@@ -1,4 +1,4 @@
-VERSION_FILE := src/customsettings/__init__.py
+VERSION_FILE := src/custom_settings/__init__.py
 BUILD_LOG := .build.log
 
 .PHONY: help
@@ -27,11 +27,11 @@ staging:
 
 .PHONY: test
 test:
-	detox -v --recreate
+	detox -v $(args)
 
 .PHONY: version
 version:
 	@rm -f $(BUILD_LOG)
 	@python setup.py build 2> $(BUILD_LOG) 1> /dev/null
 	@if [ -s $(BUILD_LOG) ]; then cat $(BUILD_LOG); exit 1; fi
-	@grep "^Version" `gfind -name PKG-INFO` | cut -d " " -f 2
+	@grep "^Version" `gfind src -name PKG-INFO` | cut -d " " -f 2
