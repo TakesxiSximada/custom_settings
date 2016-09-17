@@ -1,5 +1,5 @@
 custom_settings - CUSTOM SETTINGS
-================================
+=================================
 
 .. image:: https://circleci.com/gh/TakesxiSximada/custom_settings.svg?style=svg
            :target: https://circleci.com/gh/TakesxiSximada/custom_settings
