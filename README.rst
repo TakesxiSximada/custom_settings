@@ -94,3 +94,4 @@ Other
 - Github: https://github.com/TakesxiSximada/custom_settings
 - CircleCI: https://circleci.com/gh/TakesxiSximada/custom_settings
 - CodeCov: https://codecov.io/gh/TakesxiSximada/custom_settings
+- Requires.io: https://requires.io/github/TakesxiSximada/custom_settings/requirements/?branch=master
