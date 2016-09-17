@@ -4,7 +4,7 @@ import os
 from . import (
     exc,
     utils,
-    )
+)
 
 
 class CustomSettings(object):

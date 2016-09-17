@@ -4,7 +4,7 @@ from zope.dottedname import resolve
 from . import (
     adapters,
     exc,
-    )
+)
 
 
 def load(maybe_dotted, *args, **kwds):
